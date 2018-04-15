@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fer.dam.mde2_2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeModi">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:parentActivityName=".MainActivity"> <!-- Permite que el boton UP vuelva a la Activity padre -->
+            <!--
+               <meta-data
+               android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fer.dam.mde2.MainActivity"/>
+            -->
+            <!-- Con este codigo comentado permite el boton UP en versiones de Android 4.0 o inferior -->
+        </activity>
+        <activity
+            android:name=".ThirdActivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".FourthActivity"
+            android:parentActivityName=".ThirdActivity"></activity>
+    </application>
+
+</manifest>

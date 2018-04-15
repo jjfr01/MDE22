@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>-->
+
+    <style name="AppThemeModi" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_action_white_back</item>
+    </style>
+
+    <style name="Counter" parent="TextAppearance.Design.Counter">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Hint" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="OverFlowCounter" parent="TextAppearance.Design.Counter.Overflow">
+        <item name="android:textColor">@color/ErrorText</item>
+    </style>
+
+    <style name="Boton" parent="AppThemeModi">
+        <item name="colorButtonNormal">@color/colorPrimaryLight</item>
+    </style>
+    
+    <style name="ExpandedTitleModi" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CollapsingTitleModi" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorBlanco</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
